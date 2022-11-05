@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}"/>
+	<link rel="stylesheet" type="text/css" href="css/superslides.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Online Store</title>
+</head>
+
+<body style="height:1000px">
+	
+<!--First Nav Bar-->
+<div class="container-fluid">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a href="#" class="navbar-brand mb-0">
+			<img 
+				class="d-inline-block align-top"
+				src="img/amazon-logo.png" 
+				width="72" height="45"/>
+		</a>
+
+		<div>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="" class="nav-link active">Select your address</a>
+				</li>
+			</ul>
+		</div>
+
+		<div>&nbsp;</div>
+
+		<form class="d-flex">
+			<select style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+				<option>All</option>
+				<option>Alexa Skills</option>
+				<option>Amazon Devices</option>
+			</select>
+			
+			<input type="text" class="form-control me-2"
+				size="100px"
+				style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"
+			>
+
+			<button type="submit" class="btn" style="background-color:	goldenrod "> 
+				<span>
+					<i class="fa fa-search"></i>
+				</span>
+			</button>
+		</form>
+
+		<button class="navbar-toggler" type="button" 
+			data-bs-toggle="collapse" 
+			data-bs-target="#navbarNav"
+			aria-controls="navbarNav"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div 
+			class="collapse navbar-collapse " 
+			id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a href="" class="nav-link active">Sign In</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="" class="nav-link active">Return & Orders</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link active">Cart</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</nav>
+<!--Second Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: SlateGrey;">
+
+	<select style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+		<option>All</option>
+	</select>
+
+	<button class="navbar-toggler" type="button" 
+		data-bs-toggle="collapse" 
+		data-bs-target="#navbarNav"
+		aria-controls="navbarNav"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	>
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div 
+		class="collapse navbar-collapse " 
+		id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Best Sellers</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link active">Customer Service</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link active">Today's Deal</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle active"
+					id="navbarDropdown" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"
+				>
+					Prime
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li>
+						<a href="#" class="dropdown-item">
+							<img src="img/prime.png" width="300" height="300">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">New Relases</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Books</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Kindle Book</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Music</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Fashion</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Electronic</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Toys & Game</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Home</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Gift Cards</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Computer</a>
+			</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link active">Audibles</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link active">
+					<btn type="button">
+						Stream <span style="font-weight: bold;">Movies and TV Shows </span> with Prime
+					</btn>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!--Image Sliders-->
+
+	<div id="slides">
+
+		<div class="overlay"></div>
+
+		<div class="slides-container">>
+			<img src="img/slide2.jpeg" alt="">
+			<img src="img/slide3.jpeg" alt="">
+			<img src="img/slide4.jpeg" alt="">
+			<img src="img/slide5.jpeg" alt="">
+			<img src="img/slide6.jpeg" alt="">
+
+		</div>
+	
+		<div class="titleMessage">
+			<div class="heading">
+				<div class="container">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<!--
+		<nav class="slides-navigation">
+			<a href="#" class="next"></a>
+			<a href="#" class="prev"></a>
+		</nav>-->
+	</div>
+
+	<!--Footer-->
+	<div>
+		<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: SlateGrey;">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bottomNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="bottomNavbar">
+				<div class="col-sm-12" >
+					<a href="#" 
+						style="
+							color: white; text-decoration: none; 
+							display: block;; text-align: center;"
+						>
+							Back to Top
+						</a>
+				</div>
+			</div>		
+		</nav>
+	</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
